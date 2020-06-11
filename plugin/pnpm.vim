@@ -30,7 +30,7 @@ func! pnpm#run(cmd)
 endf
 
 " Mappings
-nnoremap <leader>pa :call PnpmAdd(<q-args>) <CR>
-nnoremap <leader>pt :call PnpmTest(<q-args>) <CR>
-nnoremap <leader>pi :call PnpmInstall(<q-args>) <CR>
-nnoremap <leader>pr :call PnpmRun(<q-args>) <CR>
+nnoremap <leader>Pa :call PnpmAdd <Space>
+nnoremap <leader>Pt :call PnpmTest() <CR>
+nnoremap <leader>Pi :call PnpmInstall() <CR>
+nnoremap <leader>Pr :call PnpmRun <Space>
