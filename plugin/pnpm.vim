@@ -21,5 +21,5 @@ com! -nargs=* PnpmRun call pnpm#run('run ' . <q-args>)
 
 func! pnpm#run(cmd)
   let s:pnpm_command = substitute(g:pnpm_command, "{cmd}", a:cmd, 'g')
-  execute s:pnpm_command
+  exec '!'.s:pnpm_command
 endf
