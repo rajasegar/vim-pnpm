@@ -7,7 +7,7 @@ autocmd BufRead,BufNewFile pnpm-lock.yaml,package.json,*.js compiler pnpm
 autocmd BufRead,BufNewFile pnpm-lock.yaml,package.json,*.js setlocal makeprg=pnpm
 
 if !exists('g:pnpm_command')
-  let g:pnpm_command = "make {cmd}"
+  let g:pnpm_command = "pnpm {cmd}"
 endif
 
 com! -nargs=* PnpmAdd call pnpm#run('add ' . <q-args>)
