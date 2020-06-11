@@ -19,16 +19,21 @@ It's recommended to use a plugin manager to manage your vim plugins. A few examp
 
 ### Vundle
 
+```
 Plugin 'rajasegar/vim-pnpm'
+```
 
 ### Plug
 
+```
 Plug 'rajasegar/vim-pnpm'
-
+```
 
 ### NeoBundle
 
+```
 NeoBundle 'rajasegar/vim-pnpm'
+```
 
 ## Usage
 
