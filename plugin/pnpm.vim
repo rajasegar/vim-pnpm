@@ -8,9 +8,6 @@ if exists('g:vim_pnpm')
 endif
 let vim_pnpm=1
 
-autocmd BufRead,BufNewFile pnpm-lock.yaml,package.json,*.js compiler pnpm
-autocmd BufRead,BufNewFile pnpm-lock.yaml,package.json,*.js setlocal makeprg=pnpm
-
 if !exists('g:pnpm_command')
   let g:pnpm_command = "pnpm {cmd}"
 endif
