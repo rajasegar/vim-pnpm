@@ -1,3 +1,8 @@
+" vim-pnpm - pnpm command bindings for vim/NeoVim
+" Maintainer: Rajasegar Chandran <rajasegar.c@gmail.com>
+" Version: 0.0.3
+
+
 if exists('g:vim_pnpm')
   finish
 endif
@@ -23,3 +28,9 @@ func! pnpm#run(cmd)
   let s:pnpm_command = substitute(g:pnpm_command, "{cmd}", a:cmd, 'g')
   exec '!'.s:pnpm_command
 endf
+
+" Mappings
+nnoremap <leader>pa :call PnpmAdd(<q-args>) <CR>
+nnoremap <leader>pt :call PnpmTest(<q-args>) <CR>
+nnoremap <leader>pi :call PnpmInstall(<q-args>) <CR>
+nnoremap <leader>pr :call PnpmRun(<q-args>) <CR>
