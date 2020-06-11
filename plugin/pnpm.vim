@@ -30,7 +30,7 @@ func! pnpm#run(cmd)
 endf
 
 " Mappings
-nnoremap <leader>Pa :call PnpmAdd <Space>
-nnoremap <leader>Pt :call PnpmTest() <CR>
-nnoremap <leader>Pi :call PnpmInstall() <CR>
-nnoremap <leader>Pr :call PnpmRun <Space>
+nnoremap <leader>Pa :call pnpm#run('add ') <Space>
+nnoremap <leader>Pt :call pnpm#run('test') <CR>
+nnoremap <leader>Pi :call pnpm#run('install') <CR>
+nnoremap <leader>Pr :call pnpm#run(' ') <Space>
