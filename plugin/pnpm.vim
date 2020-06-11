@@ -18,7 +18,6 @@ com! -nargs=* PnpmLink call pnpm#run('link ' . <q-args>)
 com! -nargs=* PnpmUnlink call pnpm#run('unlink ' . <q-args>)
 com! -nargs=* PnpmTest call pnpm#run('test ' . <q-args>)
 com! -nargs=* PnpmRun call pnpm#run('run ' . <q-args>)
-com! -complete=file -nargs=+ pnpmNew call pnpm#run('new ' . <q-args>)
 
 func! pnpm#run(cmd)
   let s:pnpm_command = substitute(g:pnpm_command, "{cmd}", a:cmd, 'g')
