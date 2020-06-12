@@ -12,6 +12,22 @@ Simple vim command bindings to quickly run [pnpm](https://pnpm.js.org) stuff fro
 * PnpmUnlink
 * PnpmTest
 * PnpmRun
+* PnpmAddDev
+* PnpmAddOptional
+* PnpmImport
+* PnpmAudit
+* PnpmRebuild
+* PnpmPrune
+* PnpmInstallTest
+* PnpmList
+* PnpmOutdated
+* PnpmWhy
+* PnpmStart
+* PnpmStop
+* PnpmPublish
+* PnpmRecursive
+* PnpmServer
+* PnpmStore
 
 ## Installation
 
@@ -39,10 +55,9 @@ NeoBundle 'rajasegar/vim-pnpm'
 
 Simply run one of the commands. By default it just delegates to pnpm.
 
-You can overwrite g:pnpm_command to, for instance, support dispatch:
 
 ```
-let g:pnpm_command = "Dispatch pnpm {cmd}"
+:PnpmInstall
 ```
 
 ## Contribute
