@@ -1,0 +1,38 @@
+*vim-pnpm.txt* Pnpm command bindings for vim.
+*vim-pnpm*
+
+Author: Rajasegar Chandran <http://hangaroundtheweb.com/>
+License: Same terms as Vim itself (see license)
+
+This plugin is only available if 'compatible' is not set.
+
+INTRODUCTION                            *vim-pnpm-intro*
+
+When you are inside an npm project, you have a lot of 
+tasks defined in your package.json. You often run them
+inside a terminal or a separate window other than your
+editor. This plugin creates standard commands to run 
+your npm tasks using the Pnpm package manager for Node.js
+
+COMMANDS                                *vim-pnpm-commands*
+
+:PnpmInstall                            *:PnpmInstall* 
+
+Runs the `pnpm install` command
+
+:PnpmAdd [package-name]                 *:PnpmAdd*
+
+Runs the `pnpm add` command. By default the package is added
+to the dependencies of your package.json
+
+:PnpmAddDev                             *:PnpmAddDev*
+
+Runs the `pnpm add -D` command. By default the package is added
+to the devDependencies of your package.json
+
+:PnpmUpdate                        
+
+Runs the `pnpm update` command
+
+
+vim:tw=78:sw=4:ft=help:norl:

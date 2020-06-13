@@ -1,6 +1,6 @@
 " vim-pnpm - pnpm command bindings for vim/NeoVim
 " Maintainer: Rajasegar Chandran <rajasegar.c@gmail.com>
-" Version: 0.1.0
+" Version: 0.1.1
 
 
 if exists('g:vim_pnpm')
